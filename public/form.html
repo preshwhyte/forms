@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" method="post">
+        <label for="">First Name</label>
+        <input type="text" name="" id="fname" minlength="1" pattern="[a-zA-Z]*"  placeholder="First Name" required>
+        <label for=""> Last Name</label>
+        <input type="text" name="" id="" minlength="1" pattern="[a-zA-Z]*" placeholder="Last Name" required>
+        <label for="">Other Names</label>
+        <input type="text" name="" id="" minlength="1" pattern="[a-zA-Z]*" placeholder="Other Names" > 
+        <label for="">Email Address</label>
+        <input type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="" id="" placeholder="email">
+        <label for="">Phone Number</label>
+        <input type="number" minlength="10" pattern="[789][0-9]{9}" maxlength="11" name="" id="">
+        <label for="">Gender</label>
+        <select name="Gender" id="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="others">others</option>
+        </select>
+
+        <input type="submit" name="" id="">
+
+
+
+    </form> -->
+    <form>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      
+        <button type="submit">Submit</button>
+      </form>
+      <script >
+        const form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+  
+    const data = new FormData(event.target);
+  
+    const value = data.get('email');
+  
+    console.log({ value });
+  }
+      </script>
+</body>
+</html>
